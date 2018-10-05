@@ -9,8 +9,8 @@
 
                         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="calculationImpl" class="cn.neu.Dao.annotation.CalculationImpl"></bean>
-    <bean id="calculationAnnotation" class="cn.neu.Dao.annotation.CalculationAnnotation"></bean>
+    <bean id="calculationImpl" class="cn.neu.aop.annotation.CalculationImpl"></bean>
+    <bean id="calculationAnnotation" class="cn.neu.aop.annotation.CalculationAnnotation"></bean>
     <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 
 

@@ -1,4 +1,4 @@
-package cn.neu.Dao.xml;
+package cn.neu.aop.xml;
 
 public interface Calculation {
     public int add(int i, int j);

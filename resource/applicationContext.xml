@@ -9,10 +9,10 @@
 
                         http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="calculationImpl" class="cn.neu.Dao.xml.CalculationImpl"></bean>
-    <bean id="calculationAnnotation" class="cn.neu.Dao.xml.CalculationAnnotation"></bean>
+    <bean id="calculationImpl" class="cn.neu.aop.xml.CalculationImpl"></bean>
+    <bean id="calculationAnnotation" class="cn.neu.aop.xml.CalculationAnnotation"></bean>
     <aop:config>
-        <aop:pointcut expression="execution(* cn.neu.Dao.xml.CalculationImpl.*(..))" id="pointcut"></aop:pointcut>
+        <aop:pointcut expression="execution(* cn.neu.aop.xml.CalculationImpl.*(..))" id="pointcut"></aop:pointcut>
         <aop:aspect ref="calculationAnnotation">
             <aop:before method="before" pointcut-ref="pointcut"></aop:before>
             <aop:after method="after" pointcut-ref="pointcut"></aop:after>
